@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'rabbitmqctl',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/package.json
+5 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/amqplib/package.json
+6 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/body-parser/package.json
+7 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/cookie-parser/package.json
+8 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/debug/package.json
+9 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/ejs/package.json
+10 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/express/package.json
+11 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/morgan/package.json
+12 verbose installManyTop reading scoped package data from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/node_modules/serve-favicon/package.json
+13 verbose readDependencies loading dependencies from /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example/package.json
+14 silly cache add args [ 'rabbitmqctl', null ]
+15 verbose cache add spec rabbitmqctl
+16 silly cache add parsed spec Result {
+16 silly cache add   raw: 'rabbitmqctl',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'rabbitmqctl',
+16 silly cache add   rawSpec: '',
+16 silly cache add   spec: 'latest',
+16 silly cache add   type: 'tag' }
+17 silly addNamed rabbitmqctl@latest
+18 verbose addNamed "latest" is being treated as a dist-tag for rabbitmqctl
+19 info addNameTag [ 'rabbitmqctl', 'latest' ]
+20 silly mapToRegistry name rabbitmqctl
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'rabbitmqctl',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   name: 'rabbitmqctl',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/rabbitmqctl
+25 verbose addNameTag registry:https://registry.npmjs.org/rabbitmqctl not in flight; fetching
+26 verbose request uri https://registry.npmjs.org/rabbitmqctl
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 11:48:56 PM
+29 verbose request id f13cec2f92f337ad
+30 http request GET https://registry.npmjs.org/rabbitmqctl
+31 http 404 https://registry.npmjs.org/rabbitmqctl
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=0',
+32 verbose headers   'content-length': '2',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Fri, 21 Oct 2016 06:48:57 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   age: '0',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sjc3632-SJC',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1477032537.080670,VS0,VE96',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 silly get cb [ 404,
+33 silly get   { 'content-type': 'application/json',
+33 silly get     'cache-control': 'max-age=0',
+33 silly get     'content-length': '2',
+33 silly get     'accept-ranges': 'bytes',
+33 silly get     date: 'Fri, 21 Oct 2016 06:48:57 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     age: '0',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-sjc3632-SJC',
+33 silly get     'x-cache': 'MISS',
+33 silly get     'x-cache-hits': '0',
+33 silly get     'x-timer': 'S1477032537.080670,VS0,VE96',
+33 silly get     vary: 'Accept-Encoding' } ]
+34 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/rabbitmqctl
+34 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+34 verbose stack     at emitTwo (events.js:87:13)
+34 verbose stack     at Request.emit (events.js:172:7)
+34 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+34 verbose stack     at emitOne (events.js:82:20)
+34 verbose stack     at Request.emit (events.js:169:7)
+34 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+35 verbose statusCode 404
+36 verbose pkgid rabbitmqctl
+37 verbose cwd /Users/kalgi/Documents/javascript-workspace/RabbitMQ_Example
+38 error Darwin 16.0.0
+39 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "rabbitmqctl" "--save"
+40 error node v4.5.0
+41 error npm  v2.15.9
+42 error code E404
+43 error 404 Registry returned 404 for GET on https://registry.npmjs.org/rabbitmqctl
+43 error 404
+43 error 404 'rabbitmqctl' is not in the npm registry.
+43 error 404 You should bug the author to publish it (or use the name yourself!)
+43 error 404 It was specified as a dependency of 'RabbitMQ_Example'
+43 error 404
+43 error 404 Note that you can also install from a
+43 error 404 tarball, folder, http url, or git url.
+44 verbose exit [ 1, true ]
